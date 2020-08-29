@@ -1,0 +1,64 @@
+body{
+    background-image: url("bg\ abstract.jpg");
+    background-size: cover;
+}
+/* start navigation*/
+.header_area .main-menu .navbar .navbar-brand {
+    padding: 0 0 0 0rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 5rem;
+}
+.header_area .main-menu .nav-item .nav-link{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 1.7rem;
+    color: white;
+}
+.header_area .main-menu .navbar-nav .active a{
+    background:#CEDEB9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.header_area .main-menu .navbar-nav a:hover{
+    background:#CEDEB9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/*end navigation*/
+
+/*Banner Area*/
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width:18vw;
+    background:black;
+    display: inline-block;
+    margin-left: 5%;
+    transform:translateY(-10);
+}
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+.title-text{
+    
+}
+/*End Banner Area*/
+
+/*Buttons*/
+
+.button{
+    padding: .8rem 2.2rem;
