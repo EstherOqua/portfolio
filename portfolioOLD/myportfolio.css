@@ -113,3 +113,6 @@ body{
     padding: .4rem 0;
 }
 /* End of About Area */
+.banner-image {
+    max-width: 100%
+}
