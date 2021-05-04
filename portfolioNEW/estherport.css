@@ -9,38 +9,92 @@
     height: 100vh;
 }
 .navbar{
-    height: 80px;
+    position: fixed;
+    height: 90px;
     width: 100%;
-    background: rgba(0,0,0,0.4);
+    /* background: rgba(0,0,0,0.4); */
 }
 
-.logo{
-    width: 140px;
+.wrapper .navbar .logo{
+    font-weight: 600;
+    font-size: 35px;
+    width: 100px;
     height: auto;
-    padding: 20px 100px;
+    padding: 25px 40px;
+    text-decoration: none;
 }
 
 .navbar ul{
     float: right;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .navbar ul li{
     list-style: none;
     margin: 0 8px;
     display: inline-block;
-    line-height: 80px;
+    line-height: 10px;
 }
 .navbar ul li a{
     text-decoration: none;
-    color: white;
+    color:grey;
     font-size: 20px;
     padding: 6px 13px;
     font-family: Roboto, sans-serif;
+    transition: .4s;
 }
 
 .navbar ul li a.active,
 .navbar ul li a:hover{
-    background:grey;
+    background:whitesmoke;
     border-radius: 2px;
+}
+.wrapper .center{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.center h1{
+    color: grey;
+    font-size: 40px;
+    font-weight: 600px;
+    width: 900px;
+    text-align: center;
+}
+.center h2{
+    color: grey;
+    font-size: 30px;
+    font-weight: bold;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
+.center .buttons {
+    margin: 50px 200px;
+}
+
+.buttons button{
+    height: 50px;
+    width: 110px;
+    font-size: 13px;
+    font-weight: bold;
+    color: grey;
+    border: 1px solid #cc0000;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .5s;
+    margin-left:110px ;
+}
+
+.buttons .btn{
+    margin-left: 25px;
+}
+.buttons button:hover{
+    background: #cc0000;
 }
