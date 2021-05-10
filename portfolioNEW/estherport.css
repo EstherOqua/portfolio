@@ -1,75 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:ital,wght@0,100;0,400;1,100&family=Ubuntu:wght@400;500&display=swap');
 *{
     padding: 0;
     margin: 0;
-}
-.wrapper{
-    background-size: cover;
-    height: 100vh;
-    
+    box-sizing: border-box;
+    text-decoration: none;
 }
 .navbar{
-    position: fixed;
-    /* height: 90px; */
+    max-width:1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/*navbar styling*/
+.wrapper{
+    position: fixed; 
     width: 100%;
-    padding: 10px 0;
-    /* background: rgba(0,0,0,0.4); */
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background-color: crimson;
+}
+.wrapper .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .sticky{
-    padding:30px 0;
-    background: grey;
+.wrapper .logo a{
+    color:black;
+    font-size: 35px;
+    font-weight: 500;
 }
-
-.wrapper .navbar .logo{
-    font-weight: 600;
-    font-size: 25px;
-    width: 100px;
-    height: auto;
-    padding: 5px 25px;
-    font-family: Roboto, sans-serif;
-    text-decoration: none;
-}
-
-.navbar ul{
-    float: right;
-    margin-right: 15px;
-}
-
-.navbar ul li{
+.wrapper .menu li{
     list-style: none;
-    margin: 0 8px;
     display: inline-block;
-    line-height: 10px;
 }
-.navbar ul li a{
-    text-decoration: none;
-    color:grey;
-    font-size: 20px;
-    padding: 6px 13px;
-    font-family: Roboto, sans-serif;
+.wrapper .menu li a{
+    color:black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
     transition: color 0.3s ease;
 }
+.wrapper .menu li a:hover{
+    color:grey;
 
-/* .navbar ul li a.active, */
-.navbar ul li a:hover{
-    /* background:whitesmoke;
-    border-radius: 2px; */
-    color: black;
 }
-.wrapper .center{
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: sans-serif;
+/*home section styling*/
+
+.home{
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    color:black;
     user-select: none;
 }
-
-.center h1{
+.home .max-width{
+    margin: auto 0 auto 40px;
+    padding-left: 150px;
+    padding-top: 150px;
+}
+.home h1{
     color:black;
     font-size: 40px;
     font-weight: 600px;
@@ -77,7 +73,7 @@
     font-family: Roboto, sans-serif;
     text-align: center;
 }
-.center h2{
+.home h2{
     color: black;
     font-size: 30px;
     font-weight: bold;
@@ -87,7 +83,7 @@
     text-align: center;
     font-style: italic;
 }
-.center .buttons {
+.home .buttons {
     margin: 50px 200px;
 }
 
@@ -110,4 +106,75 @@
 }
 .buttons button:hover{
     background: gray;
+}
+/* about section styling */
+section{
+    padding:100px 0;
+}
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', san-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%)
+}
+.about .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: darkcyan;
+    padding:5px;
+    background: #fff;
+    transform: translateX(-50%)
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive media query start */
+@media (.max-width: 991px){
+    .navbar{
+        padding: 0 50px;
+    }
 }
