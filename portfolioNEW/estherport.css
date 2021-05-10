@@ -7,20 +7,30 @@
 .wrapper{
     background-size: cover;
     height: 100vh;
+    
 }
 .navbar{
     position: fixed;
-    height: 90px;
+    /* height: 90px; */
     width: 100%;
+    padding: 10px 0;
     /* background: rgba(0,0,0,0.4); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .sticky{
+    padding:30px 0;
+    background: grey;
 }
 
 .wrapper .navbar .logo{
     font-weight: 600;
-    font-size: 35px;
+    font-size: 25px;
     width: 100px;
     height: auto;
-    padding: 25px 40px;
+    padding: 5px 25px;
+    font-family: Roboto, sans-serif;
     text-decoration: none;
 }
 
@@ -41,17 +51,18 @@
     font-size: 20px;
     padding: 6px 13px;
     font-family: Roboto, sans-serif;
-    transition: .4s;
+    transition: color 0.3s ease;
 }
 
-.navbar ul li a.active,
+/* .navbar ul li a.active, */
 .navbar ul li a:hover{
-    background:whitesmoke;
-    border-radius: 2px;
+    /* background:whitesmoke;
+    border-radius: 2px; */
+    color: black;
 }
 .wrapper .center{
     position: absolute;
-    top: 70%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: sans-serif;
@@ -59,16 +70,18 @@
 }
 
 .center h1{
-    color: grey;
+    color:black;
     font-size: 40px;
     font-weight: 600px;
     width: 900px;
+    font-family: Roboto, sans-serif;
     text-align: center;
 }
 .center h2{
-    color: grey;
+    color: black;
     font-size: 30px;
     font-weight: bold;
+    font-family: Roboto, sans-serif;
     width: 885px;
     margin-top: 10px;
     text-align: center;
@@ -96,5 +109,5 @@
     margin-left: 25px;
 }
 .buttons button:hover{
-    background: #cc0000;
+    background: gray;
 }
