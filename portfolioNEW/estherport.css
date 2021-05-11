@@ -5,6 +5,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .navbar{
     max-width:1300px;
     padding: 0 80px;
@@ -112,7 +115,7 @@
 section{
     padding:100px 50px;
 }
-.about .projects .contact{
+.about .projects .contact .footer{
     font-family: 'Poppins', sans-serif;
 }
 section .title{
@@ -226,7 +229,7 @@ section .title::after{
     width: calc(50% 30px);
 }
 
-.contact .contact-content .left .text{
+.contact .contact-content .column-left .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -234,9 +237,39 @@ section .title::after{
 
 .contact .contact-content .column-left p{
     text-align: justify;
+    flex-wrap: wrap;
 }
 
+.contact .contact-content .column-left .icons{
+    margin: 10px 0;
+}
 
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .info i{
+    font-size: 25px;
+    color: #cc0000;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+
+}
+
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
 
 
 
