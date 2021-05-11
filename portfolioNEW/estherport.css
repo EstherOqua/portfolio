@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:ital,wght@0,100;0,400;1,100&family=Ubuntu:wght@400;500&display=swap');
 *{
-    padding: 0;
-    margin: 0;
+    padding: 30;
+    margin: 60;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -62,8 +62,8 @@
     user-select: none;
 }
 .home .max-width{
-    margin: auto 0 auto 40px;
-    padding-left: 150px;
+    margin: auto 40px auto 40px;
+    padding-left: 100px;
     padding-top: 150px;
 }
 .home h1{
@@ -110,9 +110,9 @@
 }
 /* about section styling */
 section{
-    padding:100px 0;
+    padding:100px 50px;
 }
-.about .projects{
+.about .projects .contact{
     font-family: 'Poppins', sans-serif;
 }
 section .title{
@@ -147,7 +147,8 @@ section .title::after{
 .about .title::after{
     content: "who i am";
 }
-.about .about-content{
+.about .about-content,
+.contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -207,13 +208,32 @@ section .title::after{
 .projects .project-content .card{
     display: inline-block;
     flex-direction: column;
-    margin: 20px;
+    margin: 30px;
     color:black;
     transition: all 0.3s ease;
+    width: 18rem;
+    justify-content: space-between;
 }
 .projects .project-content .card:hover{
     transform: scale(1.05);
     background: grey;
+}
+/* contact section styling */
+.contact .title::after{
+    content: "get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% 30px);
+}
+
+.contact .contact-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .column-left p{
+    text-align: justify;
 }
 
 
