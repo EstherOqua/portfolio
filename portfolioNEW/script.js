@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
-            $('.wrapper').addClass("sticky");
+            $('.navbar').addClass("sticky");
         }else{
-            $('.wrapper').removeClass("sticky");
+            $('.navbar').removeClass("sticky");
         }
     })
 });
